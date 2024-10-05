@@ -1,8 +1,6 @@
-// let listContainer = document.getElementById('list-container')
 let listContainer = document.getElementById('list-container')
 let head = document.querySelector('head')
 let inputBox = document.getElementById('input-box')
-
 
 function addTask(){
     if(inputBox.value == ''){
@@ -35,7 +33,6 @@ listContainer.addEventListener('click', (el)=>{
 function saveData(){
     localStorage.setItem("data",listContainer.innerHTML)
 }
-
 function showTask(){
     listContainer.innerHTML = localStorage.getItem("data");
 }
